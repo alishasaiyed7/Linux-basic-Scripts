@@ -1,0 +1,25 @@
+1. Install Apache or Nginx
+
+# Apache
+sudo apt install apache2 -y  
+# Nginx
+sudo apt install nginx -y
+
+
+2. Manage Service with systemctl
+sudo systemctl start apache2   # Start service
+sudo systemctl stop apache2    # Stop service
+sudo systemctl enable apache2  # Start at boot
+sudo systemctl disable apache2 # Disable at boot
+sudo systemctl status apache2  # Check status
+
+Note (Replace apache2 with nginx if you choose Nginx)
+
+3. Monitor Processes
+ps aux | grep apache2    # List processes
+top                      # Real-time monitoring
+htop                     # Better version of top (install: sudo apt install htop -y)
+
+4. Kill a Process
+sudo kill <PID>
+sudo kill -9 <PID>   # Force kill
