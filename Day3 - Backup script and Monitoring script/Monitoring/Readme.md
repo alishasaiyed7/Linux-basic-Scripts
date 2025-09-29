@@ -162,6 +162,10 @@ once this is dne. Run the script with a lower threshold for checking purpose and
 <img width="500" height="316" alt="image" src="https://github.com/user-attachments/assets/a66fa682-5389-41c8-b9e4-a94e1d8ca2d6" />
 <img width="500" height="316" alt="image" src="https://github.com/user-attachments/assets/9748d922-2849-482b-b2eb-81f7fa5dc15e" />
 
+## AUTHOR
+Name - Saiyed Alisha
+Designation - System Admin | AWS
+
 
 
 
