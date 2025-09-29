@@ -11,7 +11,7 @@ echo "==== Disk Usage Monitor Warning"
 
 #1. Get Usage %
 
-DISK_USAGE=$(df -h / awk 'NR==2 {print $5}' | sed 's/%//')
+DISK_USAGE=$(df -h / | tail -1 | awk '{print $5}' | tr -d '%') )
 
 #Mmeory usage check
 
@@ -42,6 +42,7 @@ else
 else
   echo "memory  usage is normal : ${MEM_USAGE}%"
   
+
 
 
 
