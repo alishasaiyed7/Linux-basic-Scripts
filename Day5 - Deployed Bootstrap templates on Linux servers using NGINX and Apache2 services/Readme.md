@@ -82,6 +82,48 @@ http://<server-ip>
 ```
 
 
+## If you want to add a manual path insted of /var/www/html
+``` bash
+
+#create a web root
+sudo mkdir -p /var/www/apache2
+sudo chown $USER:$USER /var/www/apache2
+
+#open the files and make an update
+sudo bash -c 'cat <<EOF >> /etc/apache2/sites-available/000-default.conf
+add the path inside
+< Virtual Host : 8080 >
+Document Root /var/www/apache2
+</ VirtualHost>
+EOD'
+
+# Ensure Apache has access
+sudo bash -c 'cat <<EOF >> /etc/apache2/apache2.conf
+<Directory /var/www/apache2>
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+EOF'
+
+#Same way you can change the path of NGINX
+just update
+ /etc/nginx/sites-available/default to point to that directory
+and restart NGINX
+
+```
+| Code Section                            | Description                                                   |       |                                                             |
+| --------------------------------------- | ------------------------------------------------------------- | ----- | ------------------------------------------------- |
+| `sudo apt install apache2 git unzip -y` | Installs web server and tools needed for deployment.          |       |                                                             |
+| `systemctl enable/start apache2`        | Ensures Apache starts automatically on boot.                  |       |                                                             |
+| `mkdir -p /var/www/apache2 or html`      | Creates a dedicated folder for the website.                   |       |                                                             |
+| `sed -i 's                              | Document Root
+| `git clone`                             | Downloads the Bootstrap template directly from GitHub.        |       |                                                             |
+| `cp -r startbootstrap-agency/dist/*`                          | Copies ready-to-serve website files to the root folder.       |       |                                                             |
+| `systemctl restart apache2`             | Restarts Apache to reflect configuration and content changes. |       |                                                             |
+
+
+
 ## 💡 Why This Project Matters
 
 This project demonstrates:
