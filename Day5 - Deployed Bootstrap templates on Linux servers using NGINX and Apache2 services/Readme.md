@@ -86,11 +86,11 @@ http://<server-ip>
 
 This project demonstrates:
 
-✅ Linux administration skills — package installation, service management, permissions
-✅ Automation with Bash scripting — reducing manual setup
-✅ Web server configuration — Apache & Nginx basics
-✅ Static website deployment — hosting Bootstrap templates
-✅ DevOps fundamentals — preparing for CI/CD, infrastructure as code
+✅ Linux administration skills — package installation, service management, permissions. \
+✅ Automation with Bash scripting — reducing manual setup.\
+✅ Web server configuration — Apache & Nginx basics \
+✅ Static website deployment — hosting Bootstrap templates \
+✅ DevOps fundamentals — preparing for CI/CD, infrastructure as code 
 
 Such projects are perfect for resumes, interviews, and portfolios because they showcase real-world system setup and automation skills.
 
