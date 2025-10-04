@@ -2,12 +2,12 @@
 
 ## 📖 Overview
 
-This project automates the process of deploying a static Bootstrap website on a Linux server. /
-It uses a shell script to: /
+This project automates the process of deploying a static Bootstrap website on a Linux server. \
+It uses a shell script to: \
 
-Install required web services (Apache2 or Nginx) /
-Deploy the website from a GitHub repository /
-Make it accessible via the server’s IP address /
+Install required web services (Apache2 or Nginx) \
+Deploy the website from a GitHub repository \
+Make it accessible via the server’s IP address \
 This is a simple but powerful DevOps + Linux Administration project showing your understanding of automation, web service configuration, and deployment.
 
 ## ⚙️ Tech Stack
