@@ -46,10 +46,10 @@ sudo sed -i 's|DocumentRoot /var/www/html|' /etc/apache2/sites-available/000-def
 sudo systemctl restart apache2
 
 # Clone Bootstrap template
-sudo git clone https://github.com/StartBootstrap/startbootstrap-full-width-pics.git .
+sudo git clone https://github.com/StartBootstrap/startbootstrap-agency.git 
 
 # Copy required files to web root
-cp -r startbootstrap-agency/dist/*  /var/www/html.
+cp -r startbootstrap-agency/dist/*  /var/www/html
 
 # Restart nginx
 sudo systemctl restart nginx
