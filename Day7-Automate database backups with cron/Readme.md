@@ -199,7 +199,7 @@ sudo mysql -u alisha -pRoot123 -e "SHOW DATABASES;"
 ## To Setup Email (Gmail)
 1️⃣Install
 ```bash
-sudo apt install postfix linsasl2modules
+sudo apt install postfix libsasl2modules
 ```
 2️⃣ Edit :
 ```bash
