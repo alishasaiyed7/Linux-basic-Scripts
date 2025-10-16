@@ -60,8 +60,7 @@ Specifies the database name to export.\
 Redirects the normal output (stdout) of the mysqldump command into the backup file.\
 👉 2>>"$LOG_FILE"\
 This redirects error output (stderr) and appends it to the log file.\
-2> means redirect error output.\
->> means append (don’t overwrite).\
+2> means redirect error output and >> meansappend (don’t overwrite).\
 Together, it means:\
 “If any error occurs, append it to the log file.”
 
